@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <StackPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ce316_project_test.HelloController">
    <children>
-      <AnchorPane fx:id="mainanchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1100.0">
+      <AnchorPane fx:id="mainanchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1100.0" visible="false">
          <children>
             <AnchorPane prefHeight="750.0" prefWidth="194.0" style="-fx-background-color: #2f9294;">
                <children>
@@ -68,7 +72,7 @@
             </Button>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="project_anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1100.0" visible="false">
+      <AnchorPane fx:id="project_anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1100.0">
          <children>
             <AnchorPane prefHeight="173.0" prefWidth="1100.0" style="-fx-background-color: #2f9294;">
                <children>
@@ -110,48 +114,36 @@
             </AnchorPane>
             <AnchorPane layoutX="8.0" layoutY="182.0" prefHeight="569.0" prefWidth="1100.0">
                <children>
-                  <Label layoutX="313.0" layoutY="42.0" prefHeight="35.0" prefWidth="167.0" text="Project Name:">
-                     <font>
-                        <Font size="22.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="313.0" layoutY="88.0" prefHeight="32.0" prefWidth="191.0" text="Project Description:">
-                     <font>
-                        <Font size="22.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="314.0" layoutY="235.0" prefHeight="32.0" prefWidth="191.0" text="Configuration:">
-                     <font>
-                        <Font size="22.0" />
-                     </font>
-                  </Label>
-                  <TextField fx:id="project_name_tf" layoutX="510.0" layoutY="47.0" prefHeight="25.0" prefWidth="231.0" />
-                  <TextField fx:id="project_description_tf" layoutX="510.0" layoutY="92.0" prefHeight="25.0" prefWidth="231.0" />
-                  <Label layoutX="318.0" layoutY="283.0" prefHeight="25.0" prefWidth="182.0" text="Source Codes :">
-                     <font>
-                        <Font size="22.0" />
-                     </font>
-                  </Label>
-                  <Button layoutX="510.0" layoutY="286.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="231.0" text="Choose from Desktop" />
-                  <MenuButton layoutX="510.0" layoutY="238.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="231.0">
-                     <items>
-                        <MenuItem mnemonicParsing="false" text="Action 1" />
-                        <MenuItem mnemonicParsing="false" text="Action 2" />
-                     </items>
-                  </MenuButton>
-                  <Button fx:id="save_button" layoutX="314.0" layoutY="340.0" mnemonicParsing="false" onAction="#save_project_settings" prefHeight="25.0" prefWidth="83.0" text="SAVE" />
-                  <Label layoutX="314.0" layoutY="137.0" prefHeight="32.0" prefWidth="191.0" text="Input File:">
-                     <font>
-                        <Font size="22.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="314.0" layoutY="185.0" prefHeight="32.0" prefWidth="191.0" text="Output File:">
-                     <font>
-                        <Font size="22.0" />
-                     </font>
-                  </Label>
-                  <Button layoutX="510.0" layoutY="189.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="231.0" text="Choose from Desktop" />
-                  <Button layoutX="510.0" layoutY="141.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="231.0" text="Choose from Desktop" />
+                  <VBox layoutX="-2.0" layoutY="-1.0" prefHeight="569.0" prefWidth="1093.0">
+                     <children>
+                        <GridPane fx:id="Project_Grid" prefHeight="523.0" prefWidth="1093.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                        </GridPane>
+                        <GridPane fx:id="arguman_gridpane" prefHeight="544.0" prefWidth="1093.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                        </GridPane>
+                        <Button fx:id="save_button" mnemonicParsing="false" prefHeight="25.0" prefWidth="117.0" text="SAVE" />
+                        <Button fx:id="Add_argument_button" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="117.0" text="Add_Argument">
+                           <VBox.margin>
+                              <Insets left="150.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
                </children>
             </AnchorPane>
          </children>
@@ -204,6 +196,57 @@
                   <ChoiceBox fx:id="language_choicebox" layoutX="207.0" layoutY="130.0" prefHeight="25.0" prefWidth="231.0" />
                </children>
             </AnchorPane>
+            <HBox layoutX="444.0" layoutY="208.0" prefHeight="258.0" prefWidth="652.0">
+               <children>
+                  <TableView fx:id="Config_Table" prefHeight="301.0" prefWidth="383.0">
+                    <columns>
+                      <TableColumn fx:id="Config_column_name" prefWidth="130.0" text="Name" />
+                      <TableColumn fx:id="Config_column_ID" prefWidth="142.0" text="ID" />
+                    </columns>
+                  </TableView>
+                  <GridPane fx:id="Config_Grid" prefHeight="301.0" prefWidth="413.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                  </GridPane>
+               </children>
+            </HBox>
+            <VBox layoutX="14.0" layoutY="153.0" prefHeight="595.0" prefWidth="394.0">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="117.0" text="Language ID" />
+                  <TextField fx:id="Language_ID_TXT" />
+                  <Label prefHeight="35.0" prefWidth="117.0" text="Language Title" />
+                  <TextField fx:id="Language_Title_TXT" />
+                  <Label prefHeight="35.0" prefWidth="117.0" text="Language Name" />
+                  <TextField fx:id="Language_Name_TXT" />
+                  <Label prefHeight="35.0" prefWidth="117.0" text="Compiler" />
+                  <TextField fx:id="Compiler_TXT" />
+                  <Label prefHeight="35.0" prefWidth="117.0" text="Compiler Instruction" />
+                  <TextField fx:id="Compiler_Instrcution_TXT" />
+                  <Label prefHeight="35.0" prefWidth="117.0" text="Run Instruction" />
+                  <TextField fx:id="Run_Instruction_TXT" />
+                  <Button fx:id="Add_Language_button" mnemonicParsing="false" prefHeight="33.0" prefWidth="121.0" text="Add language">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Config_back_mainmenu" mnemonicParsing="false" onAction="#openmainscreen" prefHeight="33.0" prefWidth="141.0" text="Go back to menu">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
          </children>
       </AnchorPane>
       <AnchorPane fx:id="assign_anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1100.0" visible="false">

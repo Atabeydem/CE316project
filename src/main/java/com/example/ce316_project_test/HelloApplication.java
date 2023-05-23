@@ -1,6 +1,5 @@
 package com.example.ce316_project_test;
 
-import com.example.ce316_project_test.db.DBConnection;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;

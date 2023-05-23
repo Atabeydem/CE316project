@@ -5,10 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2863c527-766c-45db-b56b-1884f7160c1f" name="Changes" comment="Errors and typos fixed. Functions edited. FXML upgraded.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/PLConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/Evaluation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/ExecuteStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/ProgrammingLanguage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ce316.db" beforeDir="false" afterPath="$PROJECT_DIR$/ce316.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CE316_Project_test/src/main/java/com/example/ce316_project_test/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/CE316_Project_test/src/main/java/com/example/ce316_project_test/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ce316.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/PLConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/PLConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/db/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/db/Lecture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/Lecture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/db/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/316_Project_mainmenu.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/CE316_Createproject_window.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/MAIN_MENU.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/MAIN_MENU.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/ce316_ConfigurationSettings_window.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/ce316_StudentsAssignmentsResults.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ce316_project_test/316_Project_mainmenu.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ce316_project_test/CE316_Createproject_window.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ce316_project_test/HelloApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/ce316_project_test/HelloApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ce316_project_test/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/ce316_project_test/HelloController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ce316_project_test/ce316_ConfigurationSettings_window.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ce316_project_test/ce316_StudentsAssignmentsResults.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ce316_project_test/db/DBConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ce316_project_test/db/Lecture.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ce316_project_test/db/ProgrammingLanguage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ce316_project_test/db/Project.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ce316_project_test/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
+    </list>
+    <list id="3b22d912-541f-46b2-b4da-b086bafd6849" name="Changes by barutpasa" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/db/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/db/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/Project.java" afterDir="false" />
+    </list>
+    <list id="c71ce534-445f-4674-aa57-9e77fec9d05a" name="Changes by pc" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/db/ProgrammingLanguage.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +60,70 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/DBConnection.java">
+      <ranges>
+        <range start1="0" end1="1" start2="0" end2="1" changelist="2863c527-766c-45db-b56b-1884f7160c1f" />
+        <range start1="16" end1="17" start2="16" end2="18" changelist="2863c527-766c-45db-b56b-1884f7160c1f" />
+        <range start1="35" end1="40" start2="36" end2="40" changelist="2863c527-766c-45db-b56b-1884f7160c1f" />
+        <range start1="42" end1="43" start2="42" end2="43" changelist="3b22d912-541f-46b2-b4da-b086bafd6849" />
+        <range start1="44" end1="47" start2="44" end2="46" changelist="2863c527-766c-45db-b56b-1884f7160c1f" />
+        <range start1="54" end1="55" start2="53" end2="53" changelist="2863c527-766c-45db-b56b-1884f7160c1f" />
+        <range start1="57" end1="57" start2="55" end2="66" changelist="2863c527-766c-45db-b56b-1884f7160c1f" />
+        <range start1="63" end1="64" start2="72" end2="73" changelist="3b22d912-541f-46b2-b4da-b086bafd6849" />
+        <range start1="65" end1="65" start2="74" end2="142" changelist="2863c527-766c-45db-b56b-1884f7160c1f" />
+        <range start1="86" end1="98" start2="163" end2="163" changelist="3b22d912-541f-46b2-b4da-b086bafd6849" />
+        <range start1="99" end1="107" start2="164" end2="164" changelist="3b22d912-541f-46b2-b4da-b086bafd6849" />
+        <range start1="135" end1="136" start2="192" end2="193" changelist="3b22d912-541f-46b2-b4da-b086bafd6849" />
+        <range start1="163" end1="165" start2="220" end2="222" changelist="3b22d912-541f-46b2-b4da-b086bafd6849" />
+        <range start1="188" end1="189" start2="245" end2="246" changelist="3b22d912-541f-46b2-b4da-b086bafd6849" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/HelloController.java">
+      <ranges>
+        <range start1="2" end1="5" start2="2" end2="2" changelist="2863c527-766c-45db-b56b-1884f7160c1f" />
+        <range start1="6" end1="8" start2="3" end2="3" changelist="2863c527-766c-45db-b56b-1884f7160c1f" />
+        <range start1="10" end1="14" start2="5" end2="6" changelist="2863c527-766c-45db-b56b-1884f7160c1f" />
+        <range start1="17" end1="18" start2="9" end2="11" changelist="2863c527-766c-45db-b56b-1884f7160c1f" />
+        <range start1="21" end1="22" start2="14" end2="18" changelist="2863c527-766c-45db-b56b-1884f7160c1f" />
+        <range start1="24" end1="24" start2="20" end2="25" changelist="2863c527-766c-45db-b56b-1884f7160c1f" />
+        <range start1="25" end1="25" start2="26" end2="52" changelist="2863c527-766c-45db-b56b-1884f7160c1f" />
+        <range start1="53" end1="53" start2="80" end2="92" changelist="2863c527-766c-45db-b56b-1884f7160c1f" />
+        <range start1="68" end1="68" start2="107" end2="132" changelist="3b22d912-541f-46b2-b4da-b086bafd6849" />
+        <range start1="69" end1="69" start2="133" end2="134" changelist="3b22d912-541f-46b2-b4da-b086bafd6849" />
+        <range start1="85" end1="85" start2="150" end2="151" changelist="3b22d912-541f-46b2-b4da-b086bafd6849" />
+        <range start1="98" end1="98" start2="164" end2="235" changelist="3b22d912-541f-46b2-b4da-b086bafd6849" />
+        <range start1="108" end1="116" start2="245" end2="253" changelist="3b22d912-541f-46b2-b4da-b086bafd6849" />
+        <range start1="117" end1="123" start2="254" end2="260" changelist="3b22d912-541f-46b2-b4da-b086bafd6849" />
+        <range start1="162" end1="163" start2="299" end2="300" changelist="3b22d912-541f-46b2-b4da-b086bafd6849" />
+        <range start1="179" end1="180" start2="316" end2="317" changelist="3b22d912-541f-46b2-b4da-b086bafd6849" />
+        <range start1="182" end1="183" start2="319" end2="320" changelist="2863c527-766c-45db-b56b-1884f7160c1f" />
+        <range start1="223" end1="224" start2="360" end2="360" changelist="3b22d912-541f-46b2-b4da-b086bafd6849" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/Project.java">
+      <ranges>
+        <range start1="0" end1="2" start2="0" end2="2" changelist="2863c527-766c-45db-b56b-1884f7160c1f" />
+        <range start1="4" end1="8" start2="4" end2="8" changelist="3b22d912-541f-46b2-b4da-b086bafd6849" />
+        <range start1="9" end1="13" start2="9" end2="10" changelist="2863c527-766c-45db-b56b-1884f7160c1f" />
+        <range start1="14" end1="58" start2="11" end2="15" changelist="2863c527-766c-45db-b56b-1884f7160c1f" />
+        <range start1="59" end1="59" start2="16" end2="56" changelist="2863c527-766c-45db-b56b-1884f7160c1f" />
+      </ranges>
+    </file>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2Pkqi2Ndt16mbvuibAer7Eybqco" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -51,8 +148,14 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.ce316_project_test" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\PC\Documents\GitHub\CE316_Project_test\src\main\resources\com\example\ce316_project_test" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.ce316_project_test" />
     </key>
   </component>
   <component name="RunManager" selected="Application.com.example.ce316_project_test.HelloApplication">
@@ -74,7 +177,7 @@
       <module name="CE316_Project_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.ce316_project_test.db.*" />
+          <option name="PATTERN" value="com.example.ce316_project_test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,28 +251,53 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/db/DBConnection.java</url>
-          <line>23</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/DBConnection.java</url>
+          <line>24</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/HelloController.java</url>
-          <line>180</line>
+          <line>317</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/HelloController.java</url>
-          <line>189</line>
+          <line>326</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/HelloController.java</url>
-          <line>206</line>
+          <line>343</line>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/DBConnection.java</url>
+          <line>232</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/HelloController.java</url>
+          <line>300</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/HelloController.java</url>
+          <line>301</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/DBConnection.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/DBConnection.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/HelloController.java</url>
-          <line>91</line>
+          <line>157</line>
           <properties class="com.example.ce316_project_test.HelloController" method="onCreateProjectButtonClick">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -178,12 +306,48 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/HelloController.java</url>
-          <line>104</line>
+          <line>241</line>
           <properties class="com.example.ce316_project_test.HelloController" method="help_action">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/HelloController.java</url>
+          <line>42</line>
+          <properties field="Language_ID_TXT" class="com.example.ce316_project_test.HelloController" />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/HelloController.java</url>
+          <line>45</line>
+          <properties field="Language_Name_TXT" class="com.example.ce316_project_test.HelloController" />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/HelloController.java</url>
+          <line>48</line>
+          <properties field="Language_Title_TXT" class="com.example.ce316_project_test.HelloController" />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/HelloController.java</url>
+          <line>51</line>
+          <properties field="Run_Instruction_TXT" class="com.example.ce316_project_test.HelloController" />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/HelloController.java</url>
+          <line>33</line>
+          <properties field="Compiler_Instrcution_TXT" class="com.example.ce316_project_test.HelloController" />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/HelloController.java</url>
+          <line>36</line>
+          <properties field="Compiler_TXT" class="com.example.ce316_project_test.HelloController" />
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

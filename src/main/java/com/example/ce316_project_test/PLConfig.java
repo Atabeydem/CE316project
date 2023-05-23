@@ -123,12 +123,12 @@ public class PLConfig{
         return this.name;
     }
 
-    public double executeAndEvaluate(File file, ArrayList<Evaluation> evaluations, boolean debug) {
+    public double executeAndEvaluate(File file, ArrayList<com.example.ce316_project_test.Evaluation> evaluations, boolean debug) {
         int totalQuestions = evaluations.size();
         int correctAnswers = 0;
 
         for (int i = 0; i < totalQuestions; i++) {
-            Evaluation evaluation = evaluations.get(i);
+            com.example.ce316_project_test.Evaluation evaluation = evaluations.get(i);
             String input = evaluation.getPinput();
             String expectedOutput = evaluation.getPoutput();
 
