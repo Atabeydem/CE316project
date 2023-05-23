@@ -1,7 +1,5 @@
 package com.example.ce316_project_test;
 
-import com.almasb.fxgl.input.Input;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -9,16 +7,19 @@ import java.io.InputStreamReader;
 public class Compiler {
     private static Compiler instance = new Compiler();
 
-    private Compiler()
-    {
+    public static void main(String [] args){
+        Compiler python_compiler = new Compiler();
+        String python_file_name= "C:/Users/PC/Desktop/main.py";
+        python_compiler.interpret(python_file_name);
     }
+
 
     public static Compiler getInstance()
     {
         return instance;
     }
 
-    private boolean compilePython(String filename)
+    public boolean interpret(String filename)
     {
         try {
             Runtime runtime = Runtime.getRuntime();
@@ -30,11 +31,11 @@ public class Compiler {
 
             String output = "";
 
-            /*
+
             while ((output = stdInput.readLine()) != null) {
                 System.out.println(output);
             }
-            */
+
 
             while ((output = stdError.readLine()) != null ){
                 System.out.println(output);
@@ -91,7 +92,7 @@ public class Compiler {
 
         switch (ext) {
             case "py":
-                return compilePython(filename);
+                return interpret(filename);
             case "java":
                 return compileJava(filename);
         }
