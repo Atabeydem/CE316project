@@ -18,7 +18,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<StackPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ce316_project_test.HelloController">
+<StackPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ce316_project_test.HelloController">
    <children>
       <AnchorPane fx:id="mainanchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1100.0" visible="false">
          <children>
@@ -70,9 +70,14 @@
                   <Font size="19.0" />
                </font>
             </Button>
+            <Button layoutX="214.0" layoutY="272.0" mnemonicParsing="false" onAction="#OpenProjectMenu" prefHeight="46.0" prefWidth="247.0" text="Select Project">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="project_anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1100.0">
+      <AnchorPane fx:id="project_anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1100.0" visible="false">
          <children>
             <AnchorPane prefHeight="173.0" prefWidth="1100.0" style="-fx-background-color: #2f9294;">
                <children>
@@ -249,7 +254,7 @@
             </VBox>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="assign_anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1100.0" visible="false">
+      <AnchorPane fx:id="assign_anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1100.0">
          <children>
             <AnchorPane prefHeight="153.0" prefWidth="1106.0" style="-fx-background-color: #2f9294;">
                <children>
@@ -281,11 +286,11 @@
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <TableView layoutX="347.0" layoutY="26.0" prefHeight="395.0" prefWidth="383.0">
+                  <TableView fx:id="student_results_tv" layoutX="347.0" layoutY="26.0" prefHeight="395.0" prefWidth="383.0">
                      <columns>
-                        <TableColumn prefWidth="119.0" text="Student ID" />
-                        <TableColumn prefWidth="137.0" text="Student Name" />
-                        <TableColumn prefWidth="125.0" text="Grade" />
+                        <TableColumn fx:id="student_id_tc" prefWidth="119.0" text="Student ID" />
+                        <TableColumn fx:id="student_name_tc" prefWidth="137.0" text="Student Name" />
+                        <TableColumn fx:id="student_grade_tc" prefWidth="125.0" text="Grade" />
                      </columns>
                   </TableView>
                   <Button layoutX="69.0" layoutY="276.0" mnemonicParsing="false" onAction="#openmainscreen" prefHeight="55.0" prefWidth="240.0" text="Back to Main Menu">
@@ -293,6 +298,64 @@
                         <Font size="20.0" />
                      </font>
                   </Button>
+                  <ChoiceBox fx:id="project_id_assignment" layoutX="52.0" layoutY="120.0" prefHeight="25.0" prefWidth="273.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ProjectMenuAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1100.0" visible="false">
+         <children>
+            <AnchorPane prefHeight="173.0" prefWidth="1100.0" style="-fx-background-color: #2f9294;">
+               <children>
+                  <AnchorPane prefHeight="182.0" prefWidth="197.0">
+                     <children>
+                        <ImageView fitHeight="182.0" fitWidth="200.0" layoutX="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../../../Desktop/CompilerLogos/740d81d3-697f-4591-8859-2575e6396944.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="197.0" layoutY="74.0" prefHeight="25.0" prefWidth="149.0" text="BCompiler" textFill="#6f0000">
+                     <font>
+                        <Font name="Calibri Bold" size="29.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="733.0" layoutY="105.0" mnemonicParsing="false" onAction="#openmainscreen" prefHeight="46.0" prefWidth="191.0" text="back to main menu">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="947.0" layoutY="105.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="127.0" text="HELP">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="67.0" fitWidth="76.0" layoutX="971.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../Desktop/CompilerLogos/61079.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="386.0" layoutY="88.0" prefHeight="80.0" prefWidth="340.0" text="Project Menu">
+                     <font>
+                        <Font name="System Bold" size="34.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="8.0" layoutY="182.0" prefHeight="569.0" prefWidth="1106.0">
+               <children>
+                  <VBox prefHeight="569.0" prefWidth="1093.0">
+                     <children>
+                        <TableView fx:id="ProjectMenuTableView" onMouseClicked="#selectFromProject" prefHeight="567.0" prefWidth="1093.0">
+                          <columns>
+                            <TableColumn fx:id="ProjectMenuID" prefWidth="200.0" text="ID" />
+                            <TableColumn fx:id="ProjectMenuTıtle" prefWidth="250.0" text="TITLE" />
+                              <TableColumn fx:id="ProjectMenuGO" prefWidth="640.0" text="GO" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
                </children>
             </AnchorPane>
          </children>

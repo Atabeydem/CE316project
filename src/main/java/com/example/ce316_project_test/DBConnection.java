@@ -1,6 +1,7 @@
 package com.example.ce316_project_test;
 
 import java.io.File;
+import java.lang.module.Configuration;
 import java.sql.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,18 +9,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DBConnection {
-
+    private static DBConnection instance = null;
     private final String fileName;
     private Connection conn;
-    private PreparedStatement insertSQL;
-    private PreparedStatement selectSQL;
 
-    private PreparedStatement insertConfiguration,insertEvaluation,insertProject;
+
+    private PreparedStatement insertConfiguration,insertEvaluation,insertProject, getAllProjectIds,getProjectConfig,getEvaluations,getConfiguration,
+            insertGrade, insertStudent, deleteGrade, getStudent, getAllGrades, deleteStudent;
      DBConnection() {
         fileName = "ce316.db";
         File file = new File(fileName);
         boolean firstRun = !file.exists();
-        conn = null;
+
 
         try {
             Class.forName("org.sqlite.JDBC");
@@ -28,24 +29,23 @@ public class DBConnection {
             if (firstRun) {
                 Statement stat = conn.createStatement();
                 // Enables foreign keys feature for sqlite
-                stat.executeUpdate("PRAGMA foreign_keys = ON;");
                 // Configurations Table
-                stat.executeUpdate("CREATE TABLE configurations(" +
-                        "configuration_id INTEGER PRIMARY KEY AUTOINCREMENT," +
-                        "configuration_title VARCHAR(50) NOT NULL," +
+                stat.executeUpdate("CREATE TABLE IF NOT EXISTS configurations(" +
+                        "configuration_id INTEGER ," +
+                        "configuration_title VARCHAR(50) ," +
                         "programming_language VARCHAR(10)," +
                         "configuration_needcompiler INTEGER,"+
                         "configuration_compileins TEXT,"+
                         "configuration_runins TEXT);");
 
                 // Projects Table
-                stat.executeUpdate("CREATE TABLE projects(" +
+                stat.executeUpdate("CREATE TABLE IF NOT EXISTS projects(" +
                         "project_id INTEGER ," +
-                        "project_title VARCHAR(50) NOT NULL," +
+                        "project_title VARCHAR(50)," +
                         "File_Format TEXT,"+
-                        "configuration_id INTEGER NOT NULL);");
+                        "configuration_id INTEGER );");
                 // Submissions Table
-                stat.executeUpdate("CREATE TABLE submissions(" +
+                stat.executeUpdate("CREATE TABLE IF NOT EXISTS submissions(" +
                         "submission_id INTEGER PRIMARY KEY AUTOINCREMENT," +
                         "student_id VARCHAR(20) NOT NULL," +
                         "status VARCHAR(10)," +
@@ -60,11 +60,31 @@ public class DBConnection {
                         "P_INPUT TEXT," +
                         "P_OUTPUT TEXT)");
 
-                insertConfiguration = conn.prepareStatement("INSERT INTO configurations (configuration_id, configuration_title, programming_language, configuration_needcompiler, configuration_compileins, configuration_runins) VALUES (?,?,?,?,?,?)");
-                insertEvaluation = conn.prepareStatement("INSERT INTO Evaluation_Table (PROJECT_ID, P_INPUT, P_OUTPUT) VALUES (?,?,?)");
-                insertProject = conn.prepareStatement("INSERT INTO projects (project_id, project_title,File_Format,configuration_id) VALUES (?,?,?,?)");
-               // insertSubmissions
+                stat.executeUpdate("CREATE TABLE IF NOT EXISTS Grades (" +
+                        "ID INTEGER PRIMARY KEY AUTOINCREMENT," +
+                        "PROJECT_ID INTEGER," +
+                        "STUDENT_ID TEXT," +
+                        "GRADE INTEGER)");
+
+                stat.executeUpdate("CREATE TABLE IF NOT EXISTS Students (" +
+                        "STUDENT_ID TEXT PRIMARY KEY," +
+                        "STUDENT_NAME TEXT)");
             }
+
+            insertGrade = conn.prepareStatement("INSERT INTO Grades(PROJECT_ID, STUDENT_ID, GRADE) VALUES (?,?,?)");
+            insertConfiguration = conn.prepareStatement("INSERT INTO configurations (configuration_id, configuration_title, programming_language, configuration_needcompiler, configuration_compileins, configuration_runins) VALUES (?,?,?,?,?,?)");
+            insertEvaluation = conn.prepareStatement("INSERT INTO Evaluation_Table (PROJECT_ID, P_INPUT, P_OUTPUT) VALUES (?,?,?)");
+            insertProject = conn.prepareStatement("INSERT INTO projects (project_id, project_title,File_Format,configuration_id) VALUES (?,?,?,?)");
+            insertStudent = conn.prepareStatement("INSERT INTO Students (STUDENT_ID, STUDENT_NAME) VALUES (?,?)");
+            getAllProjectIds = conn.prepareStatement("SELECT project_id FROM projects ");
+            getProjectConfig = conn.prepareStatement("SELECT * FROM projects WHERE project_id = ?");
+            getConfiguration = conn.prepareStatement("SELECT * FROM configurations WHERE configuration_id = ?");
+            getEvaluations = conn.prepareStatement("SELECT * FROM Evaluation_Table WHERE project_id = ?");
+            deleteGrade = conn.prepareStatement("DELETE FROM Grades WHERE PROJECT_ID = ?");
+            deleteStudent = conn.prepareStatement("DELETE FROM Students");
+            getStudent = conn.prepareStatement("SELECT * FROM Students WHERE STUDENT_ID = ?");
+            getAllGrades = conn.prepareStatement("SELECT * FROM Grades WHERE PROJECT_ID = ?");
+
 
         } catch (ClassNotFoundException | SQLException e) {
             System.err.println(e);
@@ -72,11 +92,74 @@ public class DBConnection {
 
        // fetchProgrammingLanguages();
     }
+
+
+    public static DBConnection getInstance() {
+        if (instance == null) {
+            instance = new DBConnection();
+        }
+        return instance;
+    }
+
+    public ArrayList<Grade> getGradesObject(int projectId) {
+        ArrayList<Grade> grades = new ArrayList<>();
+        try {
+            getAllGrades.setInt(1, projectId);
+            getAllGrades.execute();
+            ResultSet rs = getAllGrades.executeQuery();
+            while (rs.next()) {
+                int id = rs.getInt(1);
+                String studentId = rs.getString(3);
+                int grade = rs.getInt(4);
+                Grade gradeObject = new Grade(id, projectId, studentId, grade);
+                grades.add(gradeObject);
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        return grades;
+    }
+
+    public Student getStudentObject(String student_id){
+        try {
+            getStudent.setString(1, student_id);
+            getStudent.execute();
+            ResultSet rs = getStudent.executeQuery();
+            rs.next();
+
+            String name = rs.getString(2);
+            Student student = new Student(student_id, name);
+            return student;
+
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+
+        return null;
+    }
+
+    public void deleteGradeObject(int project_id){
+        try {
+            deleteGrade.setInt(1, project_id);
+            deleteGrade.execute();
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
+    }
+
+    public void deleteStudents(){
+        try {
+            deleteStudent.execute();
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
+    }
+
     public void addConf(ProgrammingLanguage language) {
         try {
             int id = language.getId();
             String title = language.getTitle();
-            String name = language.getName();
+            String name = language.getProgramming_language();
 
             boolean need_compiler = language.isNeed_compiler();
             String compileInsString = language.getCompileInsString();
@@ -102,6 +185,102 @@ public class DBConnection {
         }
     }
 
+    public ArrayList<Project> getAllPConfigObjects() {
+        ArrayList<Project> configList = new ArrayList<>();
+        try {
+            ResultSet rs = getAllProjectIds.executeQuery();
+            ResultSetMetaData rsmd = rs.getMetaData();
+            int columnCount = rsmd.getColumnCount();
+
+            try {
+                while (rs.next()) {
+                    int i = 1;
+                    while (i <= columnCount) {
+                        int id = rs.getInt(i++);
+                        Project config = getPConfigObject(id);
+                        configList.add(config);
+                    }
+                }
+            } catch (SQLException e) {
+                System.out.println("burada"+e);
+            }
+            return configList;
+
+        } catch (Exception e) {
+            System.out.println("..........."+e);
+        }
+
+        return configList;
+    }
+    public Project getPConfigObject(int id) {
+        try {
+            getProjectConfig.setInt(1, id);
+            getProjectConfig.execute();
+            ResultSet rs = getProjectConfig.executeQuery();
+            rs.next();
+
+            String title = rs.getString(2);
+            String mainFileFormat = rs.getString(3);
+            int PlId = rs.getInt(4);
+
+            ArrayList<Evaluation> evaluations = getEvaluationsObject(id);
+            Project config = new Project(id, title, PlId, mainFileFormat, evaluations);
+            return config;
+
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+
+        return null;
+    }
+
+    public ProgrammingLanguage getConfigurationObject(int id) {
+        try {
+            getConfiguration.setInt(1, id);
+            getConfiguration.execute();
+            ResultSet rs = getConfiguration.executeQuery();
+            rs.next();
+
+            String title = rs.getString(2);
+            String programming_language = rs.getString(3);
+            int need_compiler = rs.getInt(4);
+            boolean need_compiler_bool = false;
+            if(need_compiler == 1){
+                need_compiler_bool = true;
+            }
+            String compile_ins = rs.getString(5);
+            String run_ins = rs.getString(6);
+
+            ProgrammingLanguage configuration = new ProgrammingLanguage(id, title, programming_language, need_compiler_bool, compile_ins, run_ins);
+
+            return configuration;
+
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+
+        return null;
+    }
+
+    public ArrayList<Evaluation> getEvaluationsObject(int projectId) {
+        ArrayList<Evaluation> evaluations = new ArrayList<>();
+        try {
+            getEvaluations.setInt(1, projectId);
+            getEvaluations.execute();
+            ResultSet rs = getEvaluations.executeQuery();
+            while (rs.next()) {
+                int id = rs.getInt(1);
+                String input = rs.getString(3);
+                String output = rs.getString(4);
+                Evaluation evaluation = new Evaluation(id, projectId, input, output);
+                evaluations.add(evaluation);
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        return evaluations;
+    }
+
     public void addProject(Project project) {
         try {
 
@@ -122,6 +301,20 @@ public class DBConnection {
 
         } catch (Exception e) {
             System.err.println("sıkıntı oluştu" + e);
+        }
+    }
+
+    public void addStudent(Student st){
+        try {
+            String id = st.getId();
+            String name = st.getName();
+
+            insertStudent.setString(1,id);
+            insertStudent.setString(2,name);
+            insertStudent.execute();
+
+        }catch (Exception e){
+            System.out.println(e);
         }
     }
 
@@ -189,6 +382,24 @@ public class DBConnection {
 
         return lectures;
     }
+
+    public void addGrade(Grade grade){
+        try {
+            int project_id = grade.getProject_id();
+            String studentid = grade.getStudent_id();
+            int gradeint = grade.getGrade();
+
+            insertGrade.setInt(1,project_id);
+            insertGrade.setString(2,studentid);
+            insertGrade.setInt(3,gradeint);
+            insertGrade.execute();
+        }catch (Exception e){
+            System.out.println(e);
+        }
+
+    }
+
+
 
    /* public List<Project> fetchProjects() {
         List<Project> projects = new ArrayList<>();
@@ -490,12 +701,5 @@ public class DBConnection {
     }
 
     */
-    private static DBConnection instance = null;
 
-    public static DBConnection getInstance() {
-        if (instance == null) {
-            instance = new DBConnection();
-        }
-        return instance;
-    }
 }
