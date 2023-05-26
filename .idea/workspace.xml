@@ -4,11 +4,61 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2863c527-766c-45db-b56b-1884f7160c1f" name="Changes" comment="Errors and typos fixed. Functions edited. FXML upgraded.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/PLConfig.java" afterDir="false" />
+    <list default="true" id="91abfa45-1589-446c-91ea-ad706e285293" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/Grade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/Go.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/Resim1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/ZipPNG_transparent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/addTuple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/ellipse1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/ellipse2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/ellipse3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/ellipse4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/ellipse5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/ellipse6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/filter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/help.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/help/Frame 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/help/Frame 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/help/Frame 3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/help/Frame 4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/help/Frame 5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/help/Frame 6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/help/Frame 7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/help/leftButton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/help/rightButton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/leftArrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/paintedLogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/plus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/print.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/programming-language-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/programming.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/resume.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/rightArrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/share.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/template.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/trash.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ce316.db" beforeDir="false" afterPath="$PROJECT_DIR$/ce316.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hello.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ce316.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/p1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/p1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/DBConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/PLConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/ProgrammingLanguage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/ProgrammingLanguage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/MAIN_MENU.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/MAIN_MENU.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ce316_project_test/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/ce316_project_test/HelloController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,36 +78,26 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2Pkqi2Ndt16mbvuibAer7Eybqco" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2QG9iEPpwMx2IU4KE1QCgGBLUGA" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/Documents/GitHub/CE316_Project_test&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.3264368&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.build&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\PC\Documents\GitHub\CE316_Project_test\src\main\resources\com\example\ce316_project_test" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.com.example.ce316_project_test.HelloApplication">
-    <configuration name="Compiler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.ce316_project_test.Compiler" />
+  <component name="RunManager" selected="Application.HelloApplication">
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.ce316_project_test.HelloApplication" />
       <module name="CE316_Project_test" />
       <extension name="coverage">
         <pattern>
@@ -69,127 +109,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.example.ce316_project_test.HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.ce316_project_test.HelloApplication" />
-      <module name="CE316_Project_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.ce316_project_test.db.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
+      <module name="CE316projectAtabey" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="CE316projectAtabey" />
       <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="mvnw" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/mvnw" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.example.ce316_project_test.HelloApplication" />
-        <item itemvalue="Application.Compiler" />
+        <item itemvalue="Application.HelloApplication" />
+        <item itemvalue="Shell Script.mvnw" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2863c527-766c-45db-b56b-1884f7160c1f" name="Changes" comment="" />
-      <created>1684011551688</created>
+      <changelist id="91abfa45-1589-446c-91ea-ad706e285293" name="Changes" comment="" />
+      <created>1684969179285</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1684011551688</updated>
+      <updated>1684969179285</updated>
     </task>
-    <task id="LOCAL-00001" summary="Errors and typos fixed. Functions edited. FXML upgraded.">
-      <created>1684180907736</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1684180907736</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Errors and typos fixed. Functions edited. FXML upgraded." />
-    <option name="LAST_COMMIT_MESSAGE" value="Errors and typos fixed. Functions edited. FXML upgraded." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/File_import.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/File_import.java</url>
-          <line>9</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/db/DBConnection.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/HelloController.java</url>
-          <line>180</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/HelloController.java</url>
-          <line>189</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/HelloController.java</url>
-          <line>206</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/HelloController.java</url>
-          <line>91</line>
-          <properties class="com.example.ce316_project_test.HelloController" method="onCreateProjectButtonClick">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/HelloController.java</url>
-          <line>104</line>
-          <properties class="com.example.ce316_project_test.HelloController" method="help_action">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>

@@ -14,6 +14,6 @@ module com.example.ce316_project_test {
 
     opens com.example.ce316_project_test to javafx.fxml;
     exports com.example.ce316_project_test;
-    exports com.example.ce316_project_test.db;
-    opens com.example.ce316_project_test.db to javafx.fxml;
+    //exports com.example.ce316_project_test.db;
+    //opens com.example.ce316_project_test.db to javafx.fxml;
 }
