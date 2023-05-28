@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91abfa45-1589-446c-91ea-ad706e285293" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ce316.db" beforeDir="false" afterPath="$PROJECT_DIR$/ce316.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ce316_project_test/Compiler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/ce316_project_test/Compiler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ce316_project_test/File_import.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/ce316_project_test/File_import.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ce316_project_test/HelloApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/ce316_project_test/HelloApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ce316_project_test/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/ce316_project_test/HelloController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_files/20200602032_MertAkkan_LAB1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_files/PROJECTS.zip" beforeDir="false" afterPath="$PROJECT_DIR$/sample_files/PROJECTS.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_files/projects-2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_files/projects/20200602031_AdnanOktar_LAB1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_files/projects/20200602032_MertAkkan_LAB1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_files/projects/20200602035_KutsalBaranOzkurt_LAB1.zip" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,16 +44,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/PC/Documents/GitHub/CE316project",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/Documents/GitHub/CE316project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean package" />
