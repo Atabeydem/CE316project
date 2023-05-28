@@ -5,58 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91abfa45-1589-446c-91ea-ad706e285293" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/Grade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/Go.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/Resim1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/ZipPNG_transparent.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/add.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/addTuple.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/ellipse1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/ellipse2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/ellipse3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/ellipse4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/ellipse5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/ellipse6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/filter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/help.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/help/Frame 1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/help/Frame 2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/help/Frame 3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/help/Frame 4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/help/Frame 5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/help/Frame 6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/help/Frame 7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/help/leftButton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/help/rightButton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/leftArrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/paintedLogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/plus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/print.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/programming-language-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/programming.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/resume.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/rightArrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/share.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/template.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/images/trash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hello.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ce316.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/DBConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/PLConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/ProgrammingLanguage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ce316_project_test/ProgrammingLanguage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/MAIN_MENU.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ce316_project_test/MAIN_MENU.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ce316.db" beforeDir="false" afterPath="$PROJECT_DIR$/ce316.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ce316_project_test/Compiler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/ce316_project_test/Compiler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ce316_project_test/File_import.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/ce316_project_test/File_import.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ce316_project_test/HelloApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/ce316_project_test/HelloApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/ce316_project_test/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/ce316_project_test/HelloController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
     </list>
@@ -90,11 +46,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/PC/Documents/GitHub/CE316project",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean package" />
+    </option>
+  </component>
   <component name="RunManager" selected="Application.HelloApplication">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.ce316_project_test.HelloApplication" />
