@@ -19,6 +19,7 @@ import java.util.regex.Pattern;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -368,9 +369,17 @@ public class HelloController {
 
 
     @FXML
-    protected void help_action(){
-
+    private void help_action() throws IOException {
+        Stage stage = new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Help_Screen.fxml"));
+        Parent root = fxmlLoader.load();
+        Scene scene = new Scene(root, 800, 600);
+        stage.setTitle("Help");
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.showAndWait();
     }
+
 
 
 
