@@ -1,2 +1,2 @@
-# IDE_creation_C
+# IDE_creation
 Project for CE-316 lecture
